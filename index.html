@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <script src="https://kit.fontawesome.com/3347d6e76d.js" crossorigin="anonymous"></script>
+
+        <!-- navigationbar -->
+    <style>
+        .navbar{
+            height: 50px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            position: fixed;
+            margin-top: -10px;
+            width: 100%;
+           
+        }
+        #logo{
+            border-radius: 8px;
+            margin-left: 60px;
+             
+        }
+        label{
+            font-size: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: black
+            
+        }
+        #inp{
+            width: 400px;
+            height: 30px;
+            margin-left: 150px;
+            
+        }
+        #inp:hover{
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            border-color: white;
+
+        }
+        #btn{
+            height: 36px;
+            width: 50px;
+            font-size: 15px;
+        }
+        #hamberger{
+            font-size: 25px;
+            margin-left: 20px;
+            color: grey;
+        }
+        #microphone{
+            font-size: 20px;
+            margin-left: 10px;
+            background-color: whitesmoke;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        #notification{
+            font-size: 20px;
+            margin-left: 100px;
+        }
+        #account{
+            height: 30px;
+            width: 30px;
+            background-color: rebeccapurple;
+            border-radius: 25px;
+            color: white;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <!-- body -->
+    <style>
+        .container{
+            margin-top: 50px;
+            border: 1px solid whitesmoke;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            background-color: whitesmoke;
+            width: 97%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 10px;
+            margin-left: 10px;
+            padding: 18px;
+            
+        }
+        .title{
+              margin-top: -1px;
+              font-family: Helvetica;
+              font-size: 11px;
+              font-weight: bold;
+        }
+        .container>div:hover{
+            cursor: pointer;
+        }
+        .flexdiv{
+            display: flex;
+        }
+        .sidebaar{
+            /* border: 1px solid black; */
+            width: 5%;
+            margin-top: 50px;
+        }
+       /* sidebar */
+       #home{
+           color: rgba(0, 0, 0, 0.705);
+           font-size: 21px;
+           margin-left: 25%;
+       }
+       .lhome{
+           font-size: 12px;
+           font-weight: lighter;
+           margin-left: 20%;
+           color: grey;
+       }
+       #explore{
+        font-size: 28px;
+           margin-left: 25%;
+           color: rgba(0, 0, 0, 0.705);
+       }
+       .lexplore{
+           font-size: 12px;
+           font-weight: lighter;
+           margin-left: 14%;
+           color: grey;
+       }
+       #subcription{
+        font-size: 28px;
+           margin-left: 15%;
+           color: rgba(0, 0, 0, 0.705);
+       }
+       .lsubcription{
+           font-size: 12px;
+           font-weight: lighter;
+           color: grey;
+           
+       }
+       #library{
+        font-size: 28px;
+           margin-left: 21%;
+           color: rgba(0, 0, 0, 0.705);
+       }
+       .llibrary{
+           font-size: 12px;
+           font-weight: lighter;
+           margin-left: 14%;
+           color: grey;
+       }
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+         <i id="hamberger" class="fas fa-bars"></i>
+       
+        <div class="navdiv">
+         <a href="index.html"><img id="logo" width="40px" height="25px" src="data:image/png;base64,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"></a></div>
+         <label>YouTube</label>
+         <input type="text" id="inp" placeholder="Search">
+         <button id="btn" onclick="getsearchvaluefun()"><i class="fas fa-search"></i></button>
+        </div>
+         <div id="microphone"><i  class="fas fa-microphone"></i></div>
+         <i id="notification" class="far fa-bell"></i>
+         <div id="account">MP</div>
+    </nav>
+    <div class="flexdiv">
+        <div class="sidebaar">
+            <a href="index.html"><i id="home" class="fas fa-home"></i></a><br>
+            <label class="lhome">home</label><br><br>
+            <i id="explore" class="fas fa-poll"></i><br>
+            <label class="lexplore">explore</label><br><br>
+            <i id="subcription" class="fas fa-photo-video"></i><br>
+            <label class="lsubcription">subcription</label><br><br>
+            <i id="library" class="fab fa-youtube"></i><br>
+            <label class="llibrary">library</label><br><br><br>
+        </div>
+        <div class="container"></div>
+    </div>
+    
+</body>
+</html>
+<script>
+    trendingvideofun();
+
+    async function trendingvideofun(){
+        try {
+            var response1=await fetch(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=IN&maxResults=25&key=AIzaSyALA62CQrGkTRW31NXSLyAO3yd4RuQaNvA&part=snippet`)
+            var result1=await response1.json();
+                display(result1.items)
+        } catch (error) {
+            console.log(error)
+        }
+    } 
+
+
+    var videoarr=[]
+async function getsearchvaluefun(){
+    var x=document.querySelector('#inp').value;
+    var API='AIzaSyALA62CQrGkTRW31NXSLyAO3yd4RuQaNvA'
+    try {
+        var response=await fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${x}&key=${API}&type=video&maxResults=30&part=snippet`);
+        var result=await response.json()
+           console.log(result)
+           display(result.items,x)
+    } catch (error) {
+        console.log(error)
+        
+    }
+}
+
+async function display(arr,x){
+    
+   var div=document.querySelector('.container');
+       div.innerHTML="";
+    arr.map(function(elem){
+        var image=document.createElement("img");
+            image.style.width="230px"
+        var p1=document.createElement("p");
+        var div1=document.createElement('div')
+            p1.textContent=elem.snippet.title;
+            p1.setAttribute("class","title")
+            image.src=elem.snippet.thumbnails.medium.url;
+            div1.addEventListener('click',function(){
+                var obj={
+                    snippet:elem,
+                    arr:arr
+                }
+                videoarr.push(obj)
+                localStorage.setItem("videoarr",JSON.stringify(videoarr))
+                 window.location.href="main.html"
+            })
+            div1.append(image,p1)
+            div.append(div1)
+    })
+}
+</script>
