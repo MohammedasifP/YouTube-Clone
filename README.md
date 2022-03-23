@@ -1,7 +1,6 @@
 # YouTube-clone
 
-Urban Outfitters is a lifestyle related retailer which specializes in selling apparel, clothing accessories and apartment products. It primarily targets teens and young adults who are interested in hipster subculture and alternative fashion..
-
+A solo project of youtube which shows popular videos and a search bar for queries 
 ## Tech Stack used:
 <ul>
   <li>HTML</li>
@@ -11,10 +10,8 @@ Urban Outfitters is a lifestyle related retailer which specializes in selling ap
 
 ## Features:
 <ul>
-  <li>Search</li>
-  <li>Trending videos</li>
-  <li></li>
-  <li></li>
+  <li>Searching any video</li>
+  <li>Popular videos</li>
 </ul>
 
 ### Thanks 😊.
