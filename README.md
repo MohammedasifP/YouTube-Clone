@@ -15,4 +15,5 @@ A solo project of youtube which shows popular videos and a search bar for querie
 </ul>
 
 ### Thanks 😊.
+![UrbanOutfitters](https://i.ibb.co/2NvCbYY/Screenshot-852.png) 
 
